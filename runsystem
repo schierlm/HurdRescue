@@ -1,0 +1,6 @@
+#!/bin/sh
+echo
+echo "Early debug shell - press Ctrl+D to continue startup (Hurd console)"
+echo
+/bin/sh
+exec /sbin/init

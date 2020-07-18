@@ -1,0 +1,2 @@
+#!/bin/sh
+/bin/console -d vga -d pc_kbd --keymap us -d generic_speaker /dev/vcs

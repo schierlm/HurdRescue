@@ -1,0 +1,14 @@
+::sysinit:/bin/fsysopts / --writable
+::respawn:/etc/console
+tty1::respawn:-/bin/sh
+tty2::askfirst:-/bin/sh
+tty3::askfirst:-/bin/sh
+tty4::askfirst:-/bin/sh
+tty6::askfirst:-/bin/sh
+tty7::askfirst:-/bin/sh
+tty8::askfirst:-/bin/sh
+tty9::askfirst:-/bin/sh
+::restart:/bin/busybox init
+::ctrlaltdel:/sbin/reboot
+::shutdown:/bin/umount -a -r
+::shutdown:/sbin/swapoff -a
