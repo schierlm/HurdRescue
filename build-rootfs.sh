@@ -89,10 +89,10 @@ settrans -c crash-suspend /hurd/crash --suspend
 settrans -c default-pager /hurd/proxy-defpager
 touch startup
 cd ..
-for f in acpi auth console crash devnode eth-multiplexer exec ext2fs fakeroot fifo filter firmlink fwd hello \
-		hello-mt hostmux ifsock init lwip mach-defpager magic memfs mtab netdde new-fifo nfs nsmux null \
-		password pci-arbiter pfinet pflocal proc procfs proxy-defpager random remap rumpdisk run shutdown \
-		socketio startup storeio streamio symlink term tmpfs usermux; do
+for f in acpi auth console crash devnode eth-multiplexer exec ext2fs fakeroot fifo firmlink fwd hello \
+		hello-mt hostmux ifsock init lwip mach-defpager magic mtab netdde new-fifo nfs null \
+		password pci-arbiter pfinet pflocal proc procfs proxy-defpager random remap rumpdisk shutdown \
+		 startup storeio streamio symlink term tmpfs usermux; do
 	cp /hurd/$f hurd
 done
 cp /var/lib/random-seed lib
