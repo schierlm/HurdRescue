@@ -114,7 +114,7 @@ done
 for f in vga pc_kbd generic_speaker; do
 	cp /lib/i386-gnu/hurd/console/$f.so.0.3 lib/i386-gnu/hurd/console
 done
-cp ../busybox-1.32.0/busybox bin
+cp ../busybox-1.33.0/busybox bin
 chroot . /bin/busybox --install -s
 for f in bash console fsysopts {,u}mount nullauth s{et,how}trans; do
 	cp /bin/$f bin

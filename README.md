@@ -57,9 +57,6 @@ First compile busybox
     # cd HurdRescue
     # ./build-busybox.sh
 
-In case you want to reconfigure busybox, do not enable the `BROKEN_ON_HURD` dependency, as it is used to mark busybox applets
-that do not compile/link on the Hurd.
-
 Then build the ext2 root filesystem image
 
     # ./build-rootfs.sh
